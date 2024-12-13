@@ -1,8 +1,10 @@
 require 'rest-client'
 require 'json'
+require 'dotenv'
 
+Dotenv.load
 
-API_KEY = 'b814a9062226ad99cbaf4a72'
+API_KEY = ENV["API_KEY"]
 BASE_URL = "https://v6.exchangerate-api.com/v6/#{API_KEY}/latest/USD"
 
 def get_info(para_birimi)
