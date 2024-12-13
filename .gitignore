@@ -39,3 +39,5 @@ Thumbs.db  # Windows
 # Working Files
 *.pid
 *.gem
+*.env
+.env
